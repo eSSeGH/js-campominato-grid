@@ -6,7 +6,7 @@ btnPlay.addEventListener("click", function (){
 
     let sideGrid = document.getElementById("level-form").value
 
-    while (isNaN(sideGrid) || sideGrid > 50 || sideGrid < 1) {
+    while (isNaN(sideGrid) || sideGrid > 50 || sideGrid < 10) {
         sideGrid = prompt("Inserisci un numero compreso tra 1 e 50")
     }
 
@@ -29,6 +29,7 @@ btnPlay.addEventListener("click", function (){
     
         cellEl.addEventListener("click", function () {
             console.log(`click ${num}`)
+            cellEl.style.boxShadow = " 0 0 10px inset red"
         })
     }
 })
