@@ -5,9 +5,6 @@ const btnPlay = document.getElementById("btn-play")
 btnPlay.addEventListener("click", function (){
     console.log("click play")
 
-    const gridEl = document.querySelector(".grid")
-    gridEl.innerHTML = ""
-
     let sideGrid = document.getElementById("level-form").value
     let exclamationPoint = "!"
     
@@ -23,6 +20,9 @@ btnPlay.addEventListener("click", function (){
             alert("Ti diverti? Vabbè, io tempo da perdere ne ho quanto ne vuoi...")
         }
     }
+
+    const gridEl = document.querySelector(".grid")
+    gridEl.innerHTML = ""
 
     let cellNum = sideGrid**2
 
@@ -41,7 +41,7 @@ btnPlay.addEventListener("click", function (){
     
         cellEl.addEventListener("click", function () {
             console.log(`click ${num}`)
-            cellEl.style.boxShadow = " 0 0 10px inset red"
+            cellEl.style.boxShadow = " 0 0 20px inset red"
         })
     }
 
