@@ -35,13 +35,14 @@ btnPlay.addEventListener("click", function (){
     
         cellEl.className = "cell"
         cellEl.style.width = `calc(100%/ ${sideGrid})`
+        cellEl.style.height = `calc(100%/ ${sideGrid})`
         cellEl.innerHTML = num
     
         gridEl.append(cellEl)
     
         cellEl.addEventListener("click", function () {
             console.log(`click ${num}`)
-            cellEl.style.boxShadow = " 0 0 20px inset red"
+            cellEl.style.backgroundColor = "rgb(255, 140, 0)"
         })
     }
 

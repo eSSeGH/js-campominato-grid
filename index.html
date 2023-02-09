@@ -13,27 +13,28 @@
 
     <main>
 
-        <section class="level-bar py-3">
+        <section class="level-bar px-5 d-flex align-items-center">
+                
+            <div class="m-0">
+                <img class="logo" src="./img/campoMinatoImg.jfif" alt="">
+            </div>
 
-            <div class="container px-5 d-flex align-items-center">
+            <div class="flex-grow-1 mx-3">
+                <label class="form-label text-white mb-0">LIVELLO DI DIFFICOLTà</label>
+                <input id="level-form" type="text" class="form-control" id="level" aria-describedby="emailHelp" placeholder="Scegli un livello di difficoltà: da 10 a 50">
+            </div>
 
-                <div class="flex-grow-1">
-                    <input id="level-form" type="text" class="form-control" id="level" aria-describedby="emailHelp" placeholder="Scegli un livello di difficoltà: da 10 a 50">
-                </div>
-    
-                <div class="d-flex justify-content-center">
-                    <button id="btn-play" type="button" class="btn btn-warning level-bar-btn">PLAY</button>
-                </div>
-
+            <div class="d-flex justify-content-center">
+                <button id="btn-play" type="button" class="btn btn-warning level-bar-btn">PLAY</button>
             </div>
 
         </section>
 
         <section class="game-space">
 
-            <div class="container p-3">
+            <div class="container px-5 py-3">
 
-                <div class="grid d-flex flex-wrap"></div>
+                <div class="grid mx-auto d-flex flex-wrap"></div>
     
             </div>
 
