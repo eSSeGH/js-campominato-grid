@@ -35,9 +35,6 @@ btnPlay.addEventListener("click", function (){
 
 
 
-// generare le celle nella griglia
-
-
 
 
 
