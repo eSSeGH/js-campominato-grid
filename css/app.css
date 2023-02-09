@@ -27,3 +27,11 @@
 .level-bar-btn:hover {
     box-shadow: 0 0 10px white ;
 }
+
+.game-space {
+    background-color: rgba(0, 0, 0, 0.96);
+}
+
+.body {
+    background-color: rgba(0, 0, 0, 0.96);
+}
