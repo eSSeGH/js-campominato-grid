@@ -10,10 +10,10 @@ btnPlay.addEventListener("click", startGame)
 
 
 
-
-
 // FUNZIONI
 
+
+// RESET GAME FUNCTION
 function resetGame() {
     // azzerare il punteggio
     // svuotare la griglia
@@ -21,6 +21,7 @@ function resetGame() {
     // eliminare eventuali messaggi di game over
 }
 
+// START GAME FUNCTION
 function startGame() {
     console.log("click play")
 
@@ -46,6 +47,7 @@ function startGame() {
     btnPlay.innerHTML = "RESTART"
 }
 
+// CREATE GRID FUNCTION
 function createGrid(sideOfGrid) {
 
     let cellNum = sideOfGrid**2
@@ -70,9 +72,10 @@ function createGrid(sideOfGrid) {
     }
 }
 
-function onClick(event) {
+// CLICK CELL FUNCTION
+function onClick() {
 
-    const clickedCell = event.target
+    const clickedCell = this
 
     clickedCell.style.backgroundColor = "rgb(255, 140, 0)"
 
